@@ -25,7 +25,6 @@ def load_mnist_model():
     global mnist_model
     model_file = 'models/keras-mnist.h5'
     mnist_model = load_model(model_file)
-    mnist_model._make_predict_function()
 
 @app.route("/")
 def hello():
